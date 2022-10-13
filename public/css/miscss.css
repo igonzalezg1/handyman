@@ -1,0 +1,75 @@
+:after, :before {
+    box-sizing: border-box;
+}
+.btn-app {
+    color: white;
+    box-shadow: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 10px 15px;
+    margin: 0;
+    min-width: 60px;
+    max-width: 80px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 12px;
+    transition: all .2s;
+    background-color: steelblue !important;
+    color: white !important;
+}
+.btn-app > .fa, .btn-app > .glyphicon, .btn-app > .ion {
+    font-size: 30px;
+    display: block;
+}
+.btn-app:hover {
+    border-color: #aaa;
+    transform: scale(1.1);
+}
+.pdf {
+    background-color: #dc2f2f !important;
+    color: white !important;
+}
+.excel {
+    background-color: #3ca23c !important;
+    color: white !important;
+}
+.csv {
+    background-color: #e86c3a !important;
+    color: white !important;
+}
+.imprimir {
+    background-color: #8766b1 !important;
+    color: white !important;
+}
+.selectTable{
+    height:40px;
+    float:right;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.titulo-tabla{
+    color:#606263;
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+.inline{
+    display:inline-block;
+    padding:0;
+}
+
+.colorbarra
+{
+    background-color: #343A40 !important;
+    height: 100% !important;
+}
+
+.tamanioenca
+{
+    font-size: 13px;
+}
