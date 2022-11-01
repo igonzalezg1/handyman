@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\App as AppControllers;
 use App\Http\Controllers\handyman\ReportesController;
+use App\Http\Controllers\handyman\GenerarPDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +64,7 @@ Route::post('respaldo', [App\Http\Controllers\IgualasController::class, 'respald
 Route::group(['middleware'=> ['auth']], function(){
     Route::get('indexhandyman',[ReportesController::class, 'index'])->name('indexhandyman');
     Route::get('verreportes/{idBloque}', [ReportesController::class, 'verreportes'])->name('verreportes');
+    Route::get('generarpdf', [GenerarPDFController::class, 'generarPDF'])->name('generarpdf');
 });
 
 /**
